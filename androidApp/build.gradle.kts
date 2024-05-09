@@ -44,5 +44,14 @@ dependencies {
     implementation(libs.compose.ui.tooling.preview)
     implementation(libs.compose.material3)
     implementation(libs.androidx.activity.compose)
+    // Koin Dependency Injection Library
+    implementation(libs.koin.androidx.compose)
+    // Coil Image Loading Library
+    implementation(libs.coil.compose)
+    // Navigation Component
+    implementation(libs.androidx.navigation.compose)
+    // Accompanist System UI Controller Library
+    implementation(libs.accompanist.systemuicontroller)
+
     debugImplementation(libs.compose.ui.tooling)
 }
