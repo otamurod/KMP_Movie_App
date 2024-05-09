@@ -12,7 +12,7 @@ kotlin {
             }
         }
     }
-    
+
     listOf(
         iosX64(),
         iosArm64(),
@@ -37,8 +37,8 @@ kotlin {
             implementation(libs.ktor.client.android)
             api(libs.koin.android)
         }
-        iosMain.dependencies{
-            implementation(libs.ktor.client.darwin )
+        iosMain.dependencies {
+            implementation(libs.ktor.client.darwin)
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
