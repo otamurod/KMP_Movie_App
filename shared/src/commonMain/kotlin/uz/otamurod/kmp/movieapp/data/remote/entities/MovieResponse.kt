@@ -4,7 +4,7 @@ import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
 @Serializable
-data class MovieResponse(
+internal data class MovieResponse(
     val id:Int,
     val title:String,
     val overview:String,
