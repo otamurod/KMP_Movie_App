@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.androidLibrary)
+    alias(libs.plugins.kotlinxSerialization)
 }
 
 kotlin {
@@ -25,7 +26,19 @@ kotlin {
 
     sourceSets {
         commonMain.dependencies {
-            //put your multiplatform dependencies here
+            implementation(libs.kotlinx.coroutines.core)
+            implementation(libs.ktor.client.core)
+            implementation(libs.ktor.client.content.negotiation)
+            implementation(libs.ktor.serialization.kotlinx.json)
+            // Use api so that androidApp can use the dependency
+            api(libs.koin.core)
+        }
+        androidMain.dependencies {
+            implementation(libs.ktor.client.android)
+            api(libs.koin.android)
+        }
+        iosMain.dependencies{
+            implementation(libs.ktor.client.darwin )
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
@@ -44,3 +57,5 @@ android {
         targetCompatibility = JavaVersion.VERSION_1_8
     }
 }
+
+task("testClasses") {}
