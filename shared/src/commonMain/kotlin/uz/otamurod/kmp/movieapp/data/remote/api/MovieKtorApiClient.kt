@@ -8,8 +8,8 @@ import io.ktor.http.path
 import io.ktor.http.takeFrom
 import io.ktor.serialization.kotlinx.json.json
 import kotlinx.serialization.json.Json
-import uz.otamurod.kmp.movieapp.data.util.Constants.API_KEY
-import uz.otamurod.kmp.movieapp.data.util.Constants.BASE_URL
+import uz.otamurod.kmp.movieapp.util.Constants.API_KEY
+import uz.otamurod.kmp.movieapp.util.Constants.BASE_URL
 
 internal abstract class MovieKtorApiClient {
     val client = HttpClient {

@@ -1,4 +1,4 @@
-package uz.otamurod.kmp.movieapp.data.util
+package uz.otamurod.kmp.movieapp.util
 
 object Constants {
     const val BASE_URL = "https://api.themoviedb.org/"
