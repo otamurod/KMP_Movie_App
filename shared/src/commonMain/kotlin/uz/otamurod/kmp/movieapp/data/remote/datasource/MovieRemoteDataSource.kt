@@ -13,7 +13,7 @@ internal class MovieRemoteDataSource(
         movieKtorApiService.getMovies(page = page)
     }
 
-    suspend fun getMovie(movieId: Int) = withCon text(dispatcher.io) {
+    suspend fun getMovie(movieId: Int) = withContext(dispatcher.io) {
         movieKtorApiService.getMovie(movieId = movieId)
     }
 }
