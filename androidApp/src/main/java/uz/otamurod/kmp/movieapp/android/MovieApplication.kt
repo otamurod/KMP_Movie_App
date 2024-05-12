@@ -1,4 +1,4 @@
-package uz.otamurod.kmp.movieapp.android.presentation
+package uz.otamurod.kmp.movieapp.android
 
 import android.app.Application
 import org.koin.android.ext.koin.androidContext

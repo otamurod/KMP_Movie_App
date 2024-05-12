@@ -29,7 +29,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
 import uz.otamurod.kmp.movieapp.android.R
-import uz.otamurod.kmp.movieapp.android.Red
+import uz.otamurod.kmp.movieapp.android.presentation.theme.Red
 import uz.otamurod.kmp.movieapp.domain.model.Movie
 
 @Composable

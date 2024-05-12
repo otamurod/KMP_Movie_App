@@ -24,7 +24,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import uz.otamurod.kmp.movieapp.android.Red
+import uz.otamurod.kmp.movieapp.android.presentation.theme.Red
 import uz.otamurod.kmp.movieapp.android.presentation.home.components.MovieListItem
 import uz.otamurod.kmp.movieapp.domain.model.Movie
 
