@@ -3,7 +3,7 @@ agp = "8.3.2"
 kotlin = "1.9.20"
 compose = "1.5.4"
 compose-compiler = "1.5.4"
-compose-material3 = "1.1.2"
+compose-material3 = "1.3.0-alpha06"
 androidx-activityCompose = "1.8.0"
 # we add our new dependencies versions
 kotlinxCoroutinesCore = "1.7.3"

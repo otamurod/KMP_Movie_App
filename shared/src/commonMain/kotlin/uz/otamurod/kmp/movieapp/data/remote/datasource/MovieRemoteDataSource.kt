@@ -2,7 +2,6 @@ package uz.otamurod.kmp.movieapp.data.remote.datasource
 
 import kotlinx.coroutines.withContext
 import uz.otamurod.kmp.movieapp.data.remote.api.MovieKtorApiService
-import uz.otamurod.kmp.movieapp.data.remote.entities.MoviesResultResponse
 import uz.otamurod.kmp.movieapp.util.Dispatcher
 
 internal class MovieRemoteDataSource(

@@ -17,7 +17,7 @@ import androidx.compose.ui.unit.sp
 
 @Composable
 fun MyApplicationTheme(
-    darkTheme: Boolean = true,
+    darkTheme: Boolean = isSystemInDarkTheme(),
     content: @Composable () -> Unit
 ) {
     val colors = if (darkTheme) {
@@ -29,8 +29,10 @@ fun MyApplicationTheme(
         )
     } else {
         lightColorScheme(
-            primary = Color(0xFF6200EE),
-            secondary = Color(0xFF03DAC5)
+            primary = Light4,
+            secondary = Green,
+            surface = Light2,
+            background = Color.White.copy(alpha = 0.6f)
         )
     }
     val typography = Typography(
@@ -59,3 +61,9 @@ val Dark2 = Color(red = 28, green = 29, blue = 35)
 val Dark3 = Color(red = 31, green = 31, blue = 36)
 val Dark4 = Color(red = 34, green = 35, blue = 40)
 val Red = Color(red = 220, green = 0, blue = 59)
+
+val Light1 = Color(red = 33, green = 150, blue = 243, alpha = 255)
+val Light2 = Color(red = 3, green = 155, blue = 229, alpha = 255)
+val Light3 = Color(red = 129, green = 212, blue = 250, alpha = 255)
+val Light4 = Color(red = 3, green = 169, blue = 244, alpha = 255)
+val Green = Color(red = 14, green = 230, blue = 22, alpha = 255)
