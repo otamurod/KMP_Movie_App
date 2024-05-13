@@ -45,6 +45,7 @@ fun MovieDetailScreen(
                     .background(MaterialTheme.colorScheme.background)
             ) {
                 AsyncImage(
+                    placeholder = painterResource(id = R.drawable.movie_placeholder),
                     model = movie.imageUrl,
                     contentDescription = "Movie Thumbnail",
                     contentScale = ContentScale.Crop,
